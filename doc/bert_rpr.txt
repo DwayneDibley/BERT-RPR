@@ -1,0 +1,90 @@
+Bert Remote Procedure Registry (BERT-RPR)
+=========================================
+
+The BERT Remote Procedure Registry allows a program to expose or locate BERT-RPC
+callable functions or object methods in the network.
+
+The BERT-RPR simply contains a register of functions, theit network location,
+and other information necessary to make the functions or object methods usable
+by external programs.
+
+When the Remote Procedure Registry is started, it does two things.
+
+1 - It starts a broadcast listener to respond to broadcast messages that may
+    arrive from clients trying to find a BERT-RPR. Note that the broadcast
+    listener     is not started if the main server is listening on the loopback
+    interface (127.0.0.1).
+
+2 - It listens on the default network interface (unless specified otherwise) for
+    Remote Procedure Registry requests.
+
+The client routines necessary are provided by the BERT-RPR-CLIENT. The client
+provides a local interface, and the necessary logic to locate the BERT-RPR.
+
+Locating a BERT-RPR.
+====================
+The BERT Remote Procedure Locator will try 3 ways to find a BERT Remote Procedure
+Registry (BERT-RPR):
+
+1 - Try the local machine on the default BERT-RPR port.
+2 - Try a list of places supplied when the procedure locator is called.
+3 - Broadcast for a BERT-RPR.
+
+The first BERT-RPR found will be used to resolve BERT-RPC calls.
+
+The BERT-RPR Interface
+======================
+The BERT Remote Procedure Registry interface provides:
+
+- The registration of BERT-RPC functions or object methods.
+- The location of BERT-RPC functions or object methods.
+- Updating the status of BERT-RPC functions or object methods.
+
+The BERT-RPR Interface exposes the following methods through the "bert_rpr"
+module:
+
+resolve(module, function):
+    Find the host(s) and port(s) corresponding to the given module and function.
+    A list of host, port tuples is returned.
+
+register(module, function [, hostname [, port]])
+    Registers a function and its containing module. If the hostname is not
+    supplied, then it is assumed to be the host where the register call
+    originated. If the port is not supplied, then the default port is used.
+
+deregister(module, function [, hostname [, port]])
+    Removes the function with the given name from the naming database. If the
+    function is an empty string, all functions associated with the module on the
+    same host and port are deregistered. If the hostname is not
+    supplied, then it is assumed to be the host where the register call
+    originated. If the port is not supplied, then the default port is used.
+
+ping()
+    Test that the BERT-RPR is running.
+
+getModules()
+    Returns a list of registered modules.
+
+getFunctions(module)
+    Returns a list of the functions that the module exposes.
+
+getMetadata(module [, function])
+    Returns a list of the metadata asssociated with the module or function.
+
+dump()
+    returns the contents of the BERT-RPR in the following format.
+
+    (
+    <module>, (
+        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...),
+        ....
+        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...)
+        ),
+    <module>  (
+        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...),
+        ....
+        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...)
+        )
+    )
+
+

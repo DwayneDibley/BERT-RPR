@@ -4,15 +4,30 @@ Bert Remote Procedure Registry (BERT-RPR)
 The BERT Remote Procedure Registry allows a program to expose or locate BERT-RPC
 callable functions or object methods in the network.
 
-The BERT-RPR simply contains a register of functions, theit network location,
-and other information necessary to make the functions or object methods usable
-by external programs.
+The BERT-RPR simply contains a register of functions, their network locations,
+and other information necessary to make the functions or object methods findable 
+and usable by external programs.
+
+The specification is a work in progress, and will probably change.
+
+Any bugs, comments or questions, raise an issue on github.
 
 Requires.
 =========
 This is being developed using Python 2.6 and will be tested on both Windows XP 
 and Ubuntu Linux.
 
+Getting Started
+===============
+- Download the sources somewhere.
+- cd demo
+- python tutorial.py
+- Now read the tutorial code and compare it with the output, and most things 
+  should be clear.
+- The spec is to be found under doc
+
 Progress.
 =========
+258:	Mostly works on windows, haven't tested on linux yet, but I have no reason 
+      to believe that there is anything windows specific here.
 248:	The simple demo now works using defaults ...

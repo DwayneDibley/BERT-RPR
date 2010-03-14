@@ -1,17 +1,17 @@
 # -*- coding: latin-1 -*-
 
-ID = "$Id:$"
-VER = "$Revision:$"
+ID = "$Id: bert_rpr_finder.py 255 2010-03-14 08:33:19Z Roger $"
+VER = "$Revision: 255 $"
 
 # Bert Remote Procesure Registry Finder
 
 import sys, socket, getopt
-import bert, bert_server
+import bert, bert_rpc
 
 DEFAULT_PORT = 48490
 DEFAULT_BROADCAST_PORT = 48491
 
-class BertRpFinder(object):
+class BertRprFinder(object):
     def __init__(self, *args, **kwargs):
         self.verbose = kwargs.get('verbose', False)
         self.port = kwargs.get('port', DEFAULT_PORT)
@@ -32,39 +32,41 @@ class BertRpFinder(object):
                 except:
                     raise AttrError, "Illegal argument: port must be an integer: %s" % (port)
 
-        self.rpRegistries = []
+        self.Registries = []
 
     # Find an RpFinder
-    def find(self, verbose=False):
-        if self.verbose: print "Find an RpFinder"
-        if not self.verbose and verbose: self.verbose=verbose
+    def find(self, all=False):
+        '''
+        If the sll parameter is True, then all methods will be tries and a
+        list of all RPR's found will be returned.
+        '''
+        if self.verbose: print "\tSearching for a BERT-Remote Procedure Repository"
 
         # First try the local machine.
-        if self.verbose: print "Trying the local machine"
+        if self.verbose: print "\tTrying the local machine"
         if self.search((socket.getfqdn(), self.port)):
-            if self.verbose: print "RPF located"
-            return True
+            if self.verbose: print "\tRPR located: %s:%s" % (socket.getfqdn(), self.port)
+            if not all: return self.Registries
 
         # First try the supplied places (if any)
-        if self.verbose and self.places: print "Trying places"
-        elif self.verbose and not self.places: print "No places supplied"
+        if self.verbose and self.places: print "\tTrying supplied places",
+        elif self.verbose and not self.places: print "\tNo places supplied"
         for place in self.places:
-            if self.verbose: print "Trying %s" % (str(place))
+            if self.verbose: print "\tTrying %s" % (str(place))
             if self.search(place):
-                if self.verbose: print "RPF located"
-                return True
+                if self.verbose: print "\tRPR located: %s:%s" % place
+                if not all: return self.Registries
 
         # Next broadcast for places
-        if self.verbose: print "Broadcasting..."
+        if self.verbose: print "\tBroadcasting for an RPR"
         for place in self.broadcastForPlaces():
-            if self.verbose: print "Trying %s" % (str(place))
+            if self.verbose: print "\tResponse from %s:%s" % place
             if self.search(place):
-                if self.verbose: print "RPF located"
-                return True
+                if self.verbose: print "\tRPR located: %s:%s" % place
+                if not all: return self.Registries
 
-        print "No RPF's found"
-
-        return False
+        if self.verbose: print "\t%s RPR's found" % (len(self.Registries))
+        return self.Registries
 
     # Broadcast for RpFinders
     def broadcastForPlaces(self):
@@ -74,7 +76,7 @@ class BertRpFinder(object):
         bc_socket.settimeout(5)
         bc_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST,1)
 
-        if self.verbose: print "Broadcasting on %s:%s" % ('<broadcast>' ,self.bport)
+        if self.verbose: print "\tBroadcasting for an RPR on %s:%s" % ('<broadcast>' ,self.bport)
         bc_socket.sendto(bert.encode(my_addr), ('<broadcast>' ,self.bport))
 
         while True:
@@ -82,18 +84,18 @@ class BertRpFinder(object):
                 message , address = bc_socket.recvfrom(8192)
             except socket.timeout, e:
                 if self.verbose:
-                    if places: print "No more replies to the broadcast"
-                    else: print "No replies to the broadcast"
+                    if places: print "\tNo more replies to the broadcast"
+                    else: print "\tNo replies to the broadcast"
                 break
 
             msg = bert.decode(message)
-            if self.verbose: print "Reply=%s from=%s"% (msg, address)
+            if self.verbose: print "\tReply=%s from=%s"% (msg, address)
 
             try:
                 if not msg[1] in places:
                     places.append(msg[1])
             except Exception, e:
-                if self.verbose: print "Error decoding broadcast reply: %s" % (str(e))
+                if self.verbose: print "\tError decoding broadcast reply: %s" % (str(e))
 
             bc_socket.settimeout(1)
 
@@ -105,22 +107,23 @@ class BertRpFinder(object):
     # else return False
     def search(self, place):
         'Try to contact a RpFinder at the given address'
-        if self.verbose: print "Checking RpFinder at: %s" % (str(place))
         try:
             if self.ping(place):
-                self.rpRegistries.append(place)
+                self.Registries.append(place)
                 return True
         except:
             raise
         return False
 
-
     def ping(self, place):
-        print "PING"
-        reply = bert_server.BertClient(place).send(('call', 'rpfinder', 'ping', []))
-        print "ping", reply
-        if len(reply) > 1 and reply[1] == 'OK':
+        try:
+            reply = bert_rpc.BertRpcClient(place).call('Registry', 'ping')
+        except socket.error, e:
+            return False
+
+        if len(reply) > 1 and reply[1] == True:
             return True
+
         return False
 
 def usage(msg = None):
@@ -163,7 +166,7 @@ def main():
         else:
             usage("Unknown option %s" % (o))
 
-    rpf = BertRpFinder(*args, verbose = verbose, port=port, bcport=bcport).find(verbose)
+    rpf = BertRprFinder(*args, verbose = verbose, port=port, bcport=bcport).find(verbose)
 
 if __name__ == "__main__":
     main()

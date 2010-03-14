@@ -47,28 +47,32 @@ resolve(module, function):
     Find the host(s) and port(s) corresponding to the given module and function.
     A list of host, port tuples is returned.
 
-register(module, function [, hostname [, port]])
-    Registers a function and its containing module. If the hostname is not
-    supplied, then it is assumed to be the host where the register call
-    originated. If the port is not supplied, then the default port is used.
+register(module, function, meta, host, port)
+    Registers a function and its containing module.
+    module is the module name for the RPC call.
+    function is the function name for the RPC call.
+    meta is the meta data (a string)
+    host the name of the host serving the RPC
+    port is the port on which the RPC will be served.
 
-deregister(module, function [, hostname [, port]])
-    Removes the function with the given name from the naming database. If the
-    function is an empty string, all functions associated with the module on the
-    same host and port are deregistered. If the hostname is not
-    supplied, then it is assumed to be the host where the register call
-    originated. If the port is not supplied, then the default port is used.
+deregister_module(module, hostname, port)
+    Removes the module served from the given host and port with the given name
+    from the naming database.
+
+deregister_function(module, function, hostname, port)
+    Removes the function with the given module and function names served from
+    the given host and port from the naming database.
 
 ping()
     Test that the BERT-RPR is running.
 
-getModules()
+get_modules()
     Returns a list of registered modules.
 
-getFunctions(module)
+get_functions(module)
     Returns a list of the functions that the module exposes.
 
-getMetadata(module [, function])
+get_metadata(module [, function])
     Returns a list of the metadata asssociated with the module or function.
 
 dump()

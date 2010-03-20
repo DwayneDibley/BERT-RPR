@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Identifier Index</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Indices&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://github.com/DwayneDibley/BERT-RPR">BERT-RPR</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="identifier-index.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table border="0" width="100%">
+<tr valign="bottom"><td>
+<h1 class="epydoc">Identifier Index</h1>
+</td><td>
+[
+ <a href="#A">A</a>
+ <a href="#B">B</a>
+ <a href="#C">C</a>
+ <a href="#D">D</a>
+ <a href="#E">E</a>
+ <a href="#F">F</a>
+  G
+ <a href="#H">H</a>
+ <a href="#I">I</a>
+  J
+  K
+  L
+ <a href="#M">M</a>
+ <a href="#N">N</a>
+  O
+ <a href="#P">P</a>
+  Q
+ <a href="#R">R</a>
+ <a href="#S">S</a>
+ <a href="#T">T</a>
+ <a href="#U">U</a>
+ <a href="#V">V</a>
+  W
+  X
+  Y
+  Z
+ <a href="#_">_</a>
+]
+</td></table>
+<table border="0" width="100%">
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="A">A</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_APPLETALK">AF_APPLETALK</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_IRDA">AF_IRDA</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_CANONNAME">AI_CANONNAME</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_DECnet">AF_DECnet</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_SNA">AF_SNA</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_NUMERICHOST">AI_NUMERICHOST</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_INET">AF_INET</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_UNSPEC">AF_UNSPEC</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_NUMERICSERV">AI_NUMERICSERV</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_INET6">AF_INET6</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_ADDRCONFIG">AI_ADDRCONFIG</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_PASSIVE">AI_PASSIVE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AF_IPX">AF_IPX</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_ALL">AI_ALL</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#AI_V4MAPPED">AI_V4MAPPED</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="B">B</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr-module.html">bert_rpr</a></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcError-class.html">BertRpcError</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.finder.BertRprFinder-class.html#broadcastForPlaces">broadcastForPlaces()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder.BertRprFinder-class.html">BertRprFinder</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertError-class.html">BertError</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.BroadcastListner-class.html">BroadcastListner</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.finder.BertRprFinder-class.html">BertRprFinder</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="C">C</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#call">call()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#cast">cast()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#CAPI">CAPI</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.ConnectionError-class.html">ConnectionError</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="D">D</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#DEFAULT_BROADCAST_PORT">DEFAULT_BROADCAST_PORT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#DEFAULT_PORT">DEFAULT_PORT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#defaultConf">defaultConf</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#DEFAULT_BROADCAST_PORT">DEFAULT_BROADCAST_PORT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#DEFAULT_PORT">DEFAULT_PORT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#dump">dump()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="E">E</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_AGAIN">EAI_AGAIN</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_MEMORY">EAI_MEMORY</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_SOCKTYPE">EAI_SOCKTYPE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_BADFLAGS">EAI_BADFLAGS</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_NODATA">EAI_NODATA</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#errorTab">errorTab</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_FAIL">EAI_FAIL</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_NONAME">EAI_NONAME</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_FAMILY">EAI_FAMILY</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#EAI_SERVICE">EAI_SERVICE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="F">F</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder.BertRprFinder-class.html#find">find()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder.BertRprFinder-class.html">BertRprFinder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html">finder</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr-module.html">bert_rpr</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="H">H</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#has_ipv6">has_ipv6</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="I">I</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr-module.html#ID">ID</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr-module.html">bert_rpr</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_MULTICAST_IF">IP_MULTICAST_IF</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_DONTFRAG">IPV6_DONTFRAG</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#ID">ID</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_MULTICAST_LOOP">IP_MULTICAST_LOOP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_HOPLIMIT">IPV6_HOPLIMIT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#ID">ID</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_MULTICAST_TTL">IP_MULTICAST_TTL</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_HOPOPTS">IPV6_HOPOPTS</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#ID">ID</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_OPTIONS">IP_OPTIONS</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_JOIN_GROUP">IPV6_JOIN_GROUP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#ID">ID</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_RECVDSTADDR">IP_RECVDSTADDR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_LEAVE_GROUP">IPV6_LEAVE_GROUP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_ALLHOSTS_GROUP">INADDR_ALLHOSTS_GROUP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_TOS">IP_TOS</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_MULTICAST_HOPS">IPV6_MULTICAST_HOPS</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_ANY">INADDR_ANY</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_TTL">IP_TTL</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_MULTICAST_IF">IPV6_MULTICAST_IF</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_BROADCAST">INADDR_BROADCAST</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPORT_RESERVED">IPPORT_RESERVED</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_MULTICAST_LOOP">IPV6_MULTICAST_LOOP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_LOOPBACK">INADDR_LOOPBACK</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPORT_USERRESERVED">IPPORT_USERRESERVED</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_PKTINFO">IPV6_PKTINFO</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_MAX_LOCAL_GROUP">INADDR_MAX_LOCAL_GROUP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPROTO_ICMP">IPPROTO_ICMP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_RECVRTHDR">IPV6_RECVRTHDR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_NONE">INADDR_NONE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPROTO_IP">IPPROTO_IP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_RTHDR">IPV6_RTHDR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#INADDR_UNSPEC_GROUP">INADDR_UNSPEC_GROUP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPROTO_RAW">IPPROTO_RAW</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_UNICAST_HOPS">IPV6_UNICAST_HOPS</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_ADD_MEMBERSHIP">IP_ADD_MEMBERSHIP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPROTO_TCP">IPPROTO_TCP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_V6ONLY">IPV6_V6ONLY</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_DROP_MEMBERSHIP">IP_DROP_MEMBERSHIP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPPROTO_UDP">IPPROTO_UDP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IP_HDRINCL">IP_HDRINCL</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#IPV6_CHECKSUM">IPV6_CHECKSUM</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="M">M</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#main">main()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#MSG_CTRUNC">MSG_CTRUNC</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#MSG_PEEK">MSG_PEEK</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#main">main()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#MSG_DONTROUTE">MSG_DONTROUTE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#MSG_TRUNC">MSG_TRUNC</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#main">main()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#MSG_OOB">MSG_OOB</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="N">N</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_DGRAM">NI_DGRAM</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_NAMEREQD">NI_NAMEREQD</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_NUMERICSERV">NI_NUMERICSERV</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_MAXHOST">NI_MAXHOST</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_NOFQDN">NI_NOFQDN</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_MAXSERV">NI_MAXSERV</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#NI_NUMERICHOST">NI_NUMERICHOST</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="P">P</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder.BertRprFinder-class.html#ping">ping()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder.BertRprFinder-class.html">BertRprFinder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.ProtocolError-class.html">ProtocolError</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="R">R</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#RCVALL_MAX">RCVALL_MAX</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html">rpc</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr-module.html">bert_rpr</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_register">rpc_register()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#RCVALL_OFF">RCVALL_OFF</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_deregister_function">rpc_deregister_function()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_register_many">rpc_register_many()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#RCVALL_ON">RCVALL_ON</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_deregister_module">rpc_deregister_module()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_resolve">rpc_resolve()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#RCVALL_SOCKETLEVELONLY">RCVALL_SOCKETLEVELONLY</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_get_functions">rpc_get_functions()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_terminate">rpc_terminate()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html">registry</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr-module.html">bert_rpr</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_get_metadata">rpc_get_metadata()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_verbose">rpc_verbose()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html">Registry</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_get_modules">rpc_get_modules()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.BroadcastListner-class.html#run">run()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.BroadcastListner-class.html">BroadcastListner</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#registry">registry</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#rpc_ping">rpc_ping()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="S">S</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder.BertRprFinder-class.html#search">search()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder.BertRprFinder-class.html">BertRprFinder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_ERROR">SO_ERROR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_TYPE">SO_TYPE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#send">send()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_EXCLUSIVEADDRUSE">SO_EXCLUSIVEADDRUSE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_USELOOPBACK">SO_USELOOPBACK</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#serve">serve()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_KEEPALIVE">SO_KEEPALIVE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOCK_DGRAM">SOCK_DGRAM</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.ServerError-class.html">ServerError</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_LINGER">SO_LINGER</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOCK_RAW">SOCK_RAW</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SHUT_RD">SHUT_RD</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_OOBINLINE">SO_OOBINLINE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOCK_RDM">SOCK_RDM</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SHUT_RDWR">SHUT_RDWR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_RCVBUF">SO_RCVBUF</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOCK_SEQPACKET">SOCK_SEQPACKET</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SHUT_WR">SHUT_WR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_RCVLOWAT">SO_RCVLOWAT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOCK_STREAM">SOCK_STREAM</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SIO_RCVALL">SIO_RCVALL</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_RCVTIMEO">SO_RCVTIMEO</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOL_IP">SOL_IP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_ACCEPTCONN">SO_ACCEPTCONN</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_REUSEADDR">SO_REUSEADDR</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOL_SOCKET">SOL_SOCKET</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_BROADCAST">SO_BROADCAST</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_SNDBUF">SO_SNDBUF</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOL_TCP">SOL_TCP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_DEBUG">SO_DEBUG</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_SNDLOWAT">SO_SNDLOWAT</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOL_UDP">SOL_UDP</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_DONTROUTE">SO_DONTROUTE</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SO_SNDTIMEO">SO_SNDTIMEO</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#SOMAXCONN">SOMAXCONN</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="T">T</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#TCP_MAXSEG">TCP_MAXSEG</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test17">test17()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test3">test3()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#TCP_NODELAY">TCP_NODELAY</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test18">test18()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test4">test4()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test1">test1()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test19">test19()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test5">test5()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test10">test10()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test2">test2()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test6">test6()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test11">test11()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test20">test20()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test7">test7()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test12">test12()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test21">test21()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test8">test8()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test13">test13()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test22">test22()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test9">test9()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test14">test14()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test23">test23()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.TransferError-class.html">TransferError</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test15">test15()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test24">test24()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html">tutorial</a></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test16">test16()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#test25">test25()</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="U">U</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#usage">usage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#usage">usage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+<tr><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td><td class="link-index">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="V">V</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr-module.html#VER">VER</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr-module.html">bert_rpr</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#VER">VER</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#VER">VER</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#VER">VER</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#VER">VER</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr valign="top"><td valign="top" width="1%"><h2 class="epydoc"><a name="_">_</a></h2></td>
+<td valign="top">
+<table class="link-index" width="100%" border="1">
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder.BertRprFinder-class.html#__init__">__init__()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder.BertRprFinder-class.html">BertRprFinder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.registry-module.html#__package__">__package__</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry-module.html">bert_rpr.registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_handleConnection">_handleConnection()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.BroadcastListner-class.html#__init__">__init__()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.BroadcastListner-class.html">BroadcastListner</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc-module.html#__package__">__package__</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc-module.html">bert_rpr.rpc</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_makeExceptionMessage">_makeExceptionMessage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.registry.Registry-class.html#__init__">__init__()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.registry.Registry-class.html">Registry</a>)</span></td>
+<td width="33%" class="link-index"><a href="tutorial-module.html#__package__">__package__</a><br />
+<span class="index-where">(in&nbsp;<a href="tutorial-module.html">tutorial</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#_open">_open()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#__init__">__init__()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#_close">_close()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_open">_open()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#__init__">__init__()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_decodeMessage">_decodeMessage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcClient-class.html#_raiseException">_raiseException()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcClient-class.html">BertRpcClient</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr-module.html#__package__">__package__</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr-module.html">bert_rpr</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_encodeMessage">_encodeMessage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_sendMessage">_sendMessage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+</tr>
+<tr>
+<td width="33%" class="link-index"><a href="bert_rpr.finder-module.html#__package__">__package__</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.finder-module.html">bert_rpr.finder</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_getMessage">_getMessage()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+<td width="33%" class="link-index"><a href="bert_rpr.rpc.BertRpcServer-class.html#_waitForData">_waitForData()</a><br />
+<span class="index-where">(in&nbsp;<a href="bert_rpr.rpc.BertRpcServer-class.html">BertRpcServer</a>)</span></td>
+</tr>
+</table>
+</td></tr>
+</table>
+<br /><br /><!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Indices&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://github.com/DwayneDibley/BERT-RPR">BERT-RPR</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Mar 20 12:26:36 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -26,8 +26,15 @@ Getting Started
   should be clear.
 - The spec is to be found under doc
 
+Todo
+====
+- Make a realistic demo
+- SSL BERT-RPC
+
 Progress.
 =========
-258:	Mostly works on windows, haven't tested on linux yet, but I have no reason 
-      to believe that there is anything windows specific here.
-248:	The simple demo now works using defaults ...
+20/03/10 Added documentation.
+20/03/10 Now everything in the tutoria/test works witout ptoblem.
+         Mostly works on windows, haven't tested on linux yet, but I have no reason 
+         to believe that there is anything windows specific here.
+         The simple demo now works using defaults ...

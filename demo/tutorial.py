@@ -1,50 +1,22 @@
 # -*- coding: latin-1 -*-
 
-'''
-Copyright 2010 Roger Wenham. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification, are
-permitted provided that the following conditions are met:
-
-   1. Redistributions of source code must retain the above copyright notice, this list of
-      conditions and the following disclaimer.
-
-   2. Redistributions in binary form must reproduce the above copyright notice, this list
-      of conditions and the following disclaimer in the documentation and/or other materials
-      provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY Roger Wenham ``AS IS'' AND ANY EXPRESS OR IMPLIED
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Roger Wenham OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-The views and conclusions contained in the software and documentation are those of the
-authors and should not be interpreted as representing official policies, either expressed
-or implied, of Roger Wenham.
-'''
-
 ID = "$Id: tutorial.py 258 2010-03-14 08:44:17Z Roger $"
 VER = "$Revision: 258 $"
 
 import sys, time, socket
 sys.path.append('..')
-from bert_rpr import bert_rpr_finder, bert_rpc
+from bert_rpr import finder, rpc
 from subprocess import Popen
 
 # Tests ------------------------------------------------------------------------
 print "\ntest 1: starting a BERT Remote Procedure Registry server on default port"
-rpr = Popen(['python', '../bert_rpr/bert_rpr.py', '--verbose'])
+rpr = Popen(['python', '../bert_rpr/registry.py', '--verbose'])
 
 time.sleep(3)   # Give the server time to start
 # ------------------------------------------------------------------------------
 print
 print "test 2: Locate it using the finder, give it no clue to where the server is"
-rprs = bert_rpr_finder.BertRprFinder(verbose=True).find()
+rprs = finder.BertRprFinder(verbose=True).find()
 
 # Check we found the correct one...
 if len(rprs) > 0:
@@ -62,7 +34,7 @@ print
 print "test 3: Ping the registry (Ping is supported as default by the registry)"
 try:
     # reply = Registry.ping()
-    reply = bert_rpc.BertRpcClient(registry).call('Registry', 'ping')
+    reply = rpc.BertRpcClient(registry).call('Registry', 'ping')
 except socket.error, e:
     print "\tThe ping call resulted in exception %s" % (str(e))
     raise
@@ -78,7 +50,7 @@ print
 print "test 4: Tell the registry to terminate"
 try:
     # reply = Registry.terminate()
-    reply = bert_rpc.BertRpcClient(registry).call('Registry', 'terminate')
+    reply = rpc.BertRpcClient(registry).call('Registry', 'terminate')
 except socket.error, e:
     print "\tThe terminate call resulted in exception %s" % (str(e))
     raise
@@ -96,7 +68,7 @@ print
 print "test 5: Ping the registry (Ping is supported as default by the registry)"
 try:
     # reply = Registry.ping()
-    reply = bert_rpc.BertRpcClient(registry).call('Registry', 'ping')
+    reply = rpc.BertRpcClient(registry).call('Registry', 'ping')
     print "\tError, could ping the RPR after shutdown"
 except socket.error, e:
     print "\tThe ping call resulted in exception %s" % (str(e))
@@ -104,13 +76,13 @@ except socket.error, e:
 
 # ------------------------------------------------------------------------------
 print "\ntest 6: starting a BERT Remote Procedure Registry server on unexpected"
-rpr = Popen(['python', '../bert_rpr/bert_rpr.py', '--verbose', '--port=49490'])
+rpr = Popen(['python', '../bert_rpr/registry.py', '--verbose', '--port=49490'])
 
 time.sleep(3)   # Give the server time to start
 # ------------------------------------------------------------------------------
 print
 print "test 7: Locate it using the finder, give it no clue to where the server is"
-rprs = bert_rpr_finder.BertRprFinder(verbose=True).find()
+rprs = finder.BertRprFinder(verbose=True).find()
 
 # Check we found the correct one...
 if len(rprs) > 0:
@@ -128,7 +100,7 @@ print
 print "test 8: Ping the registry (Ping is supported as default by the registry)"
 try:
     # reply = Registry.ping()
-    reply = bert_rpc.BertRpcClient(registry).call('Registry', 'ping')
+    reply = rpc.BertRpcClient(registry).call('Registry', 'ping')
 except socket.error, e:
     print "\tThe ping call resulted in exception %s" % (str(e))
     raise
@@ -141,10 +113,10 @@ else:
 
 # ------------------------------------------------------------------------------
 print
-print "test 9: Register a BERT_RPC function with the RPR"
+print "test 9: Register a rpc function with the RPR"
 try:
     # reply = Registry.ping()
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'register',
 
@@ -170,7 +142,7 @@ print
 print "test 10: Locate a registered function"
 try:
     # (host, port) = resolve(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'resolve',
                 'module',
@@ -188,10 +160,10 @@ else:
 
 # ------------------------------------------------------------------------------
 print
-print "test 11: Register the same BERT_RPC function again"
+print "test 11: Register the same rpc function again"
 try:
     # reply = Registry.ping()
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'register',
 
@@ -217,7 +189,7 @@ print
 print "test 12: Locate a registered function (should not return a duplicate)"
 try:
     # (host, port) = resolve(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'resolve',
                 'module',
@@ -237,7 +209,7 @@ print
 print "test 13: get a list of registered modules"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_modules'
                 )
@@ -255,7 +227,7 @@ print
 print "test 14: get a list of registered functions"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_functions',
                 'module'
@@ -275,7 +247,7 @@ print
 print "test 15: get the complete metadata"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_metadata'                )
 except socket.error, e:
@@ -292,7 +264,7 @@ print
 print "test 16: get the metadata for a module"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_metadata',
                 'module'
@@ -311,7 +283,7 @@ print
 print "test 17: get the metadata for a single function"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_metadata',
                 'module',
@@ -342,7 +314,7 @@ functions = [
         ]
 try:
     # reply = Registry.register()
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'register_many',
                 functions
@@ -362,7 +334,7 @@ print
 print "test 19: Locate a registered function (should not return a duplicate)"
 try:
     # (host, port) = resolve(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'resolve',
                 'float_math',
@@ -382,7 +354,7 @@ print
 print "test 20: get a list of registered modules"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_modules'
                 )
@@ -402,7 +374,7 @@ print
 print "test 21: get a list of registered functions"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_functions',
                 'integer_math'
@@ -424,7 +396,7 @@ print
 print "test 22: get the complete metadata"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_metadata'                )
 except socket.error, e:
@@ -443,7 +415,7 @@ print
 print "test 23: get the metadata for a module"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_metadata',
                 'integer_math'
@@ -464,7 +436,7 @@ print
 print "test 24: get the metadata for a single function"
 try:
     # (host, port) = get_modules(module, function)
-    reply = bert_rpc.BertRpcClient(registry).call(
+    reply = rpc.BertRpcClient(registry).call(
                 'Registry',
                 'get_metadata',
                 'integer_math',
@@ -484,7 +456,7 @@ print
 print "End: Terminate the registry"
 try:
     # reply = Registry.terminate()
-    reply = bert_rpc.BertRpcClient(registry).call('Registry', 'terminate')
+    reply = rpc.BertRpcClient(registry).call('Registry', 'terminate')
 except socket.error, e:
     print "\tThe terminate call resulted in exception %s" % (str(e))
     raise

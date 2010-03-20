@@ -106,17 +106,34 @@ get_metadata(module [, function])
 dump()
     returns the contents of the BERT-RPR in the following format.
 
-    (
-    <module>, (
-        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...),
-        ....
-        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...)
-        ),
-    <module>  (
-        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...),
-        ....
-        <function> ((<host>, <port>, <metadata>), (host, port, metadata) ...)
-        )
-    )
+    {
+    <module>: {
+            <function>: {
+                (<host>, <port>): <metadata>,
+                ......
+                (<host>, <port>): <metadata>
+                },
+            .......
+            <function>: {
+                (<host>, <port>): <metadata>,
+                ......
+                (<host>, <port>): <metadata>
+                }
+            },
+    .....
+    <module>: {
+            <function>: {
+                (<host>, <port>): <metadata>,
+                ......
+                (<host>, <port>): <metadata>
+                },
+            .......
+            <function>: {
+                (<host>, <port>): <metadata>,
+                ......
+                (<host>, <port>): <metadata>
+                }
+            },
+    }
 
-
+Note that the reply is a python dictionary.

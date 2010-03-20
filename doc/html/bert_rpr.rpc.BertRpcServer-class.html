@@ -14,6 +14,9 @@
 <table class="navbar" border="0" width="100%" cellpadding="0"
        bgcolor="#a0c0ff" cellspacing="0">
   <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="bert_rpr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
 
   <!-- Tree link -->
       <th>&nbsp;&nbsp;&nbsp;<a
@@ -134,7 +137,7 @@ be either a python module or an object.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a name="serve"></a><span class="summary-sig-name">serve</span>(<span class="summary-sig-arg">self</span>)</span><br />
-      Serve for timeout seconds</td>
+      Serve any incoming requests, until the terminate flag is set</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="bert_rpr.rpc-pysrc.html#BertRpcServer.serve">source&nbsp;code</a></span>
             
@@ -189,8 +192,8 @@ be either a python module or an object.</td>
         <tr>
           <td><span class="summary-sig"><a name="_waitForData"></a><span class="summary-sig-name">_waitForData</span>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">sock</span>,
-        <span class="summary-sig-arg">tout</span>=<span class="summary-sig-default">2</span>)</span><br />
-      Wait for data to arrive at the socket</td>
+        <span class="summary-sig-arg">tout</span>=<span class="summary-sig-default">5</span>)</span><br />
+      Wait for data to arrive at the socket, for a max fo tout seconds</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="bert_rpr.rpc-pysrc.html#BertRpcServer._waitForData">source&nbsp;code</a></span>
             
@@ -208,7 +211,8 @@ be either a python module or an object.</td>
         <tr>
           <td><span class="summary-sig"><a name="_sendMessage"></a><span class="summary-sig-name">_sendMessage</span>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">sock</span>,
-        <span class="summary-sig-arg">msg</span>)</span></td>
+        <span class="summary-sig-arg">msg</span>)</span><br />
+      Send the reply back to the client</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="bert_rpr.rpc-pysrc.html#BertRpcServer._sendMessage">source&nbsp;code</a></span>
             
@@ -225,7 +229,8 @@ be either a python module or an object.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a name="_decodeMessage"></a><span class="summary-sig-name">_decodeMessage</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">message</span>)</span></td>
+        <span class="summary-sig-arg">message</span>)</span><br />
+      Decode a bert message</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="bert_rpr.rpc-pysrc.html#BertRpcServer._decodeMessage">source&nbsp;code</a></span>
             
@@ -242,7 +247,8 @@ be either a python module or an object.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a name="_encodeMessage"></a><span class="summary-sig-name">_encodeMessage</span>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">message</span>)</span></td>
+        <span class="summary-sig-arg">message</span>)</span><br />
+      Encode a bert message, pre-pending the 4 size bytes</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="bert_rpr.rpc-pysrc.html#BertRpcServer._encodeMessage">source&nbsp;code</a></span>
             
@@ -262,7 +268,7 @@ be either a python module or an object.</td>
         <span class="summary-sig-arg">Type</span>,
         <span class="summary-sig-arg">Code</span>,
         <span class="summary-sig-arg">exc_info</span>)</span><br />
-      {error, {Type, Code, Class, Detail, Backtrace}}</td>
+      create an error message containing a python traceback</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="bert_rpr.rpc-pysrc.html#BertRpcServer._makeExceptionMessage">source&nbsp;code</a></span>
             
@@ -398,6 +404,9 @@ be used to server on.
   </tr></table>
   
   <pre class="literalblock">
+
+create an error message containing a python traceback
+
 {error, {Type, Code, Class, Detail, Backtrace}}
 
 {error, {server, 2,
@@ -428,6 +437,9 @@ Server Error Codes
 <table class="navbar" border="0" width="100%" cellpadding="0"
        bgcolor="#a0c0ff" cellspacing="0">
   <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="bert_rpr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
 
   <!-- Tree link -->
       <th>&nbsp;&nbsp;&nbsp;<a
@@ -452,7 +464,7 @@ Server Error Codes
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Sat Mar 20 12:26:36 2010
+    Generated by Epydoc 3.0.1 on Sat Mar 20 13:47:22 2010
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

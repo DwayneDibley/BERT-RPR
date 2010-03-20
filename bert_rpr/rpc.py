@@ -56,13 +56,10 @@ import finder
 class TransferError(Exception):
     pass
 
-class ConnectionError(Exception):
+class ProtocolError(Exception):
     pass
 
-class BertError(Exception):
-    pass
-
-class BertRpcError(Exception):
+class ServerError(Exception):
     pass
 
 defaultConf = {
@@ -127,15 +124,12 @@ class BertRpcServer(object):
         return socks
 
     def serve(self):
-        '''Serve for timeout seconds'''
-        # if timeout is 0, the server until terminate is set, else return after
-        # timeout secs or the first serve.
+        '''Serve any incoming requests, until the terminate flag is set'''
         while not self.terminate:
             i,o,e = select.select(self.socks, [], [], 5)
             for sock in i:
                 try:
                     sock, addr = sock.accept()
-                    # Do this in a new thread
                     self._handleConnection(sock, addr)
                 except error,e:
                     if len(args) > 0 and e.args[0] == EMFILE:
@@ -152,6 +146,7 @@ class BertRpcServer(object):
         '''Handle the incoming connecton'''
         _, module, func, args = self._decodeMessage(self._getMessage(sock))
         args = tuple(args)
+
         #message is {call, Module, Function, Arguments}
         try:
             # Check that the call target exists
@@ -179,10 +174,14 @@ class BertRpcServer(object):
     def _getMessage(self, sock):
         '''Receive the BERP message from the socket'''
         self._waitForData(sock, 2)
+
+        # Receive the message size
         size = sock.recv(4)
         if len(size) != 4:
             return None
         size = int(struct.unpack("!L",size)[0])
+
+        # then the message body
         message = ''
         rsize = size
         while rsize > 0:
@@ -190,16 +189,20 @@ class BertRpcServer(object):
             data = sock.recv(rsize)
             rsize -= len(data)
             message  += data
+
         return message
 
-    def _waitForData(self, sock, tout=2):
-        '''Wait for data to arrive at the socket'''
+    def _waitForData(self, sock, tout=5):
+        '''Wait for data to arrive at the socket, for a max fo tout seconds'''
         i = select.select([sock], [], [], tout)[0]
         if len(i) > 0:
             return i[0]
+
+        # An empty list is returned if the select times out
         raise TransferError, "Waited for longer than %s secs" % (tout)
 
     def _sendMessage(self, sock, msg):
+        '''Send the reply back to the client'''
         try:
             while len(msg) > 0:
                 cs = sock.send(msg)
@@ -209,15 +212,20 @@ class BertRpcServer(object):
             raise
 
     def _decodeMessage(self, message):
+        ''' Decode a bert message'''
         return bert.decode(message)
 
     def _encodeMessage(self, message):
+        '''Encode a bert message, pre-pending the 4 size bytes'''
         bmsg = bert.encode(message)
         size = struct.pack("!L",len(bmsg))
         return ''.join([size, bmsg])
 
     def _makeExceptionMessage(self, Type, Code, exc_info):
-        '''{error, {Type, Code, Class, Detail, Backtrace}}
+        '''
+        create an error message containing a python traceback
+
+        {error, {Type, Code, Class, Detail, Backtrace}}
 
         {error, {server, 2,
             <<"BERTError">>,
@@ -241,14 +249,12 @@ class BertRpcServer(object):
         tb = traceback.extract_tb(exceptionTraceback)
         return (bert.Atom('error'), (bert.Atom(Type), Code, exceptionType.__name__, str(exceptionValue), tb))
 
-class ProtocolError(Exception):
-    pass
-
-class ServerError(Exception):
-    pass
 
 class BertRpcClient(object):
     def __init__(self, server=None, timeout=5):
+        '''
+        Inherit from the BertRpcClient class when creating a BERT-RPC client.
+        '''
         # The configuration
         self.cfg = defaultConf
         #self.cfg.update(config.config)
@@ -264,19 +270,33 @@ class BertRpcClient(object):
 
     def call(self, module, func, *args):
         '''Call the remote function'''
+
+        # Open the connection
         self._open()
+
+        # Send the BERT call message
         ret = self.send((bert.Atom('call'), module, func, args))
+
+        # Deal with the reply
         if len(ret) > 1 and ret[0] == 'reply':
+            # All is OK
             return ret[1]
         elif len(ret) > 1 and ret[0] == 'error':
+            # If we got an error, reraise the exception
             self._raiseException(ret[1])
         else:
             raise InvalidResponse, "Bert Message = %s" % (ret)
 
     def cast(self, module, func, *args):
-        '''Call the remote function'''
+        '''Cast to the remote function'''
+
+        # Open the connection
         self._open()
+
+        # Send the BERT cast message
         ret = self.send((bert.Atom('cast'), module, func, args))
+
+        # Deal with the reply
         if len(ret) > 1 and ret[0] == 'noreply':
             return
         elif len(ret) > 1 and ret[0] == 'error':
@@ -290,6 +310,7 @@ class BertRpcClient(object):
         if self.Socket != None:
             return self.Socket
 
+        # Create a socket
         try:
             self.Socket = socket(AF_INET, SOCK_STREAM)
             self.Socket.setsockopt(SOL_SOCKET,SO_KEEPALIVE,1)
@@ -297,6 +318,7 @@ class BertRpcClient(object):
             if self.verbose: print "Opened failed", str(e)
             raise
 
+        # Connect the socket
         try:
             self.Socket.connect(self.serverAddr)
         except:
@@ -305,23 +327,15 @@ class BertRpcClient(object):
         return self.Socket
 
     def send(self, msg):
-        '''Send the BERP to the socket'''
+        '''Send the BERP message to the socket'''
         if msg is None:
             if self.verbose: print("Error: Trying to send None message!")
             return None
 
-        bmsg = bert.encode(msg)
-        size = struct.pack("!L",len(bmsg))
+        # Encode the message
+        bmsg = self._encodeMessage(msg)
 
-        # Send the size header
-        try:
-            self.Socket.send(size)
-        except:
-            if self.verbose: print("Exception: Socket send size failed (%s)." % (str(msg)))
-            self._close()
-            raise
-
-        # Send the body
+        # Send the message
         try:
             while len(bmsg) > 0:
                 cs = self.Socket.send(bmsg)
@@ -340,6 +354,7 @@ class BertRpcClient(object):
             self._close()
             raise
 
+        # Get the body of the reply
         try:
             data = ''
             while len(data) < size:
@@ -348,9 +363,11 @@ class BertRpcClient(object):
             self._close()
             raise InternalError, "Failed to receive reply"
 
-        return bert.decode(data)
+        # decode and return the reply
+        return self._decodeMessage(data)
 
     def _close(self):
+        '''Tidily close the socket'''
         if self.Socket:
             try:
                 self.Socket.shutdown(2)
@@ -361,7 +378,18 @@ class BertRpcClient(object):
 
         self.Socket = None
 
+    def _decodeMessage(self, message):
+        ''' Decode a bert message'''
+        return bert.decode(message)
+
+    def _encodeMessage(self, message):
+        '''Encode a bert message, pre-pending the 4 size bytes'''
+        bmsg = bert.encode(message)
+        size = struct.pack("!L",len(bmsg))
+        return ''.join([size, bmsg])
+
     def _raiseException(self, exc):
+        '''Raise an exception corresponding to the BERT-RPC codes'''
         Type, Code, exceptionType, exceptionValue, tb = exc
         if Type == 'protocol':
             raise ProtocolError(Code, exceptionType, exceptionValue, tb)

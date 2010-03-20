@@ -1,7 +1,7 @@
 # -*- coding: latin-1 -*-
 
-ID = "$Id: tutorial.py 258 2010-03-14 08:44:17Z Roger $"
-VER = "$Revision: 258 $"
+ID = "$Id: tutorial.py 265 2010-03-20 12:06:00Z Roger $"
+VER = "$Revision: 265 $"
 
 import sys, time, socket
 sys.path.append('..')
